@@ -1,1 +1,10 @@
 <h1>Welcome to Edwingram!</h1>
+
+<% @posts.each do |post| %>
+  <div class="post">
+    <a href="/posts/<%= post.id%>">
+      <%= image_tag post.image %>
+    </a>
+  </div>
+
+<% end %>
